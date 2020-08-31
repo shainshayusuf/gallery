@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_gallery/tabs/tabScreen.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_animator/flutter_animator.dart';
+
 
 void main() {
   runApp(MaterialApp(
@@ -19,7 +19,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   TabController _tabController;
-  GlobalKey<AnimatorWidgetState> _key = GlobalKey<AnimatorWidgetState>();
+
 
   var tabStyle = GoogleFonts.montserrat(
       color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold);
@@ -58,15 +58,12 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
         height: height * 1,
         color: Colors.white,
       ),
-      FadeIn(
-        key: _key,
-        child: TabBarView(
-          controller: _tabController,
-          children: [
-            GalleryScreen('assets/images/Gallery.png'),
-            GalleryScreen('assets/images/Reels.png'),
-          ],
-        ),
+      TabBarView(
+        controller: _tabController,
+        children: [
+          GalleryScreen('assets/images/Gallery.png'),
+          GalleryScreen('assets/images/Reels.png'),
+        ],
       ),
 //              Positioned(
 //                right: -70,

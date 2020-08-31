@@ -32,6 +32,7 @@ dependencies:
   smooth_page_indicator: ^0.2.0
   flutter_animator: ^2.1.0
   after_layout: ^1.0.7+2
+  video_player: ^0.10.12+2
 
 dev_dependencies:
   flutter_test:
@@ -55,6 +56,16 @@ flutter:
     - assets/images/Repeat Grid 1.png
     - assets/images/Path 176.png
     - assets/images/Line 1.png
+    - assets/images/videoplayback.mp4
+    - assets/images/Icon material-play-circle-filled.png
+    - assets/images/gallery1.jpg
+    - assets/images/gallery2.jpg
+    - assets/images/Rectangle 8.png
+    - assets/images/Group 72.png
+    - assets/images/Path 172.png
+    - assets/images/gestures.png
+    - assets/images/reelSlide.png
+
 
 
 
